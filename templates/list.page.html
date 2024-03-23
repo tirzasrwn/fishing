@@ -1,0 +1,16 @@
+{{ template "base" . }}
+{{ define "content" }}
+  {{ $res := index .Data "accounts" }}
+  <table>
+    <tr>
+      <th>Email</th>
+      <th>Password</th>
+    </tr>
+    {{ range $res }}
+      <tr>
+        <th>{{ .Email }}</th>
+        <th>{{ .Password }}</th>
+      </tr>
+    {{ end }}
+  </table>
+{{ end }}

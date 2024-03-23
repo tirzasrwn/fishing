@@ -1,0 +1,9 @@
+.vscode/
+coverage.out
+coverage.html
+fishing
+schema.sql
+database.yml
+data/
+node_modules/
+.env
