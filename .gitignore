@@ -4,6 +4,6 @@ coverage.html
 fishing
 schema.sql
 database.yml
-data/
+db/data/postgres/
 node_modules/
 .env

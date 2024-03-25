@@ -61,7 +61,7 @@ func main() {
 	helpers.NewHelpers(&app)
 
 	srv := &http.Server{
-		Addr:    fmt.Sprintf("localhost:%d", app.Port),
+		Addr:    fmt.Sprintf("0.0.0.0:%d", app.Port),
 		Handler: routes(&app),
 	}
 
