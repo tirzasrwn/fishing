@@ -1,8 +1,13 @@
 #!/bin/bash
-#
+
+set -x
+set -eo pipefail
+
 cp .env.example .env
 sudo apt update
-sudo apt autoremove docker*
+cd ..
+sudo apt autoremove docker* -y
+cd ./fishing
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo groupadd docker
