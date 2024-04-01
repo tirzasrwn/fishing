@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -x
-set -eo pipefail
 
 cp .env.example .env
 sudo apt update
